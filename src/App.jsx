@@ -1,15 +1,19 @@
-import Menu from './components/Menu.jsx'
-import Rodape from './components/Rodape.jsx'
 import './App.css'
 import { Outlet } from 'react-router-dom'
+import Menu from './components/Menu'
+import Rodape from './components/Rodape'
 
-export default function App() {
+function App() {
 
   return (
     <>
-    <Menu/>
-    <Outlet/>
-    <Rodape/>
+      <Menu/>
+
+      <Outlet/>
+      
+      <Rodape/>
     </>
   )
 }
+
+export default App
